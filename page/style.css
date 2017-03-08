@@ -1,0 +1,593 @@
+html {
+	box-sizing:border-box;
+}
+
+*, *:after, *:before {
+	box-sizing:inherit;
+}
+
+
+body{
+	overflow:visible;
+
+	background:
+	linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	url("../images/bg.jpg")
+	;
+	background-color:black;
+}
+
+#container {
+	width:650px;
+	padding:10px;
+	margin:auto;
+}
+
+
+#container:after {
+	content: "";
+	display:block;
+	clear:both;
+	
+	position:relative;
+	bottom:44px;
+	left:296px;`
+}`
+
+#topbar {
+	display:flex;
+	flex-wrap:nowrap;
+}
+
+.linkpics {
+	display:flex;
+	float:right;
+}
+
+
+#topfacebook, #topwifi, #toptwitter, #topyoutube {
+	height:40px;
+	width:40px;
+
+	margin-right:5px;
+	margin-left:2px;
+	margin-bottom:10px;
+
+	box-shadow:0 3px rgba(175, 175, 175, 0.4);
+}
+
+#topfacebook {
+	background-color:#435799;
+	padding:6px;
+}
+
+#topwifi {
+	background-color:#ce9025;
+	padding:9px;
+}
+
+#toptwitter {
+	background-color:#688bc9;
+	padding:7px;
+}
+
+#topyoutube {
+	background-color:#b33825;
+	padding:2px;
+}
+
+.sub {
+	display:flex;
+	align-items:center;
+	float:right;
+	margin-right:50px;
+	position:relative;
+	top:40px;
+	right:200px;
+}
+
+#subtext {
+	color:#d6d6d6;
+	font-family:arial, sans-serif;
+	text-transform:uppercase;
+	font-size:11px;
+}
+#subdot {
+	height:3px;
+	width:3px;
+
+	border-radius:50%;
+
+	background:white;
+	margin:0 10px;
+}
+
+.fivedots {
+	display:flex;
+	flex-direction:column;
+	
+	position:relative;
+	top:33px;
+	left:433px;
+	margin-right:3px;
+
+	height:25px;
+	justify-content:space-around;
+}
+
+.fivedots div {
+	height:3px;
+	width:3px;
+	border-radius:50%;
+	background:white;
+}
+
+.linkbar {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	height:45px;
+	line-height:35px;
+	clear:right;
+
+}
+
+#first-link, #second-link, #third-link, #fourth-link{
+	text-align:center;
+
+	margin:5px;
+
+	flex-grow:1;
+
+	text-decoration:none;
+	font-family:sans-serif;
+
+	text-transform:uppercase;
+
+	background-color:#a03030;
+	text-align:center;
+	font-size:12px;
+	box-shadow:0 3px rgba(175, 175, 175, 0.6);
+}
+
+.linkbar a:link{
+	color:white;
+}
+
+.linkbar a:honey{
+	font-weight:bold;
+}
+
+.linkbar a:visited{
+	color:white;
+}
+
+.linkbar a:active{
+	color:white;
+	font-weight:bold;
+}
+
+#slidepic {
+	overflow:hidden;
+	width:620px;
+	height:250px;
+
+	background:black;
+	color:white;
+	border:10px solid white;
+
+	background:
+		url("../images/top-image.png");
+
+	margin:5px;
+	box-shadow:0 3px rgba(175, 175, 175, .6);
+}
+
+#slidelogo {
+	width:270px;
+	position:relative;
+	top:40px;
+	left:20px;
+}
+
+#slidegrid {
+	opacity:.2;
+}
+
+
+.slideButtons{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+
+}
+
+#slideButtonLeft , #slideButtonMiddle , #slideButtonRight {
+	background-color:red;
+	height:9px;
+	width:9px;
+	border:3px solid white;
+	border-radius:50%;
+	margin:10px 4px;
+
+	box-shadow:0 2px rgba(175, 175, 175, .6);
+
+}
+
+#slideButtonMiddle, #slideButtonRight {
+	background-color:white;
+}
+
+
+.infoboxes {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	height:225px;
+}
+
+#leftinfo, #midinfo, #rightinfo{
+	text-align:center;
+
+	margin:5px;
+	width:200px;
+
+	flex-grow:1;
+
+	text-decoration:none;
+	font-family:sans-serif;
+
+	background-color:white;
+	text-align:center;
+	font-size:12px;
+
+	box-shadow:0 3px rgba(175, 175, 175, 0.6);
+}
+
+.infoheader {
+	font-size:14px;
+	text-align:left;
+	padding:15px;
+	color:#303030;
+	letter-spacing:1px;
+}
+
+.infodate {
+	font-size:10px;
+	color:grey;
+	text-align:left;
+	margin-left:15px;
+	padding-bottom:10px;
+}
+
+.infocaption {
+	font-size:8px;
+	text-align:left;
+	margin-left:15px;
+	line-height:15px;
+}
+
+.readmore {
+	font-size:9px;
+	font-weight:bold;
+	color:#c42323;
+	text-align:center;
+	padding-top:7px;
+}
+
+.skateboarders {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+
+	margin-top:30px;
+	margin-bottom:10px;
+	height:340px;
+
+}
+
+#lance, #rodney, #steve, #tommy {
+	text-align:center;
+
+	margin:5px;
+	display:flex;
+
+	box-shadow:0 3px rgba(175, 175, 175, 0.6);
+}
+
+#lance {
+	height:150px;
+	width:200px;
+
+	background:
+		url("../images/sk8er-4.png")
+	;
+	border:3px solid white;
+
+	color:white;
+	font-family:arial black, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:25px;
+	line-height:25px;
+	justify-content:center;
+	align-items:center;
+
+
+}
+	
+#rodney{
+	height:150px;
+	width:200px;
+
+	background:
+		url("../images/sk8er-3.png")
+	;
+
+	border:3px solid white;
+
+	color:white;
+	font-family:arial black, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:25px;
+	line-height:25px;
+	justify-content:center;
+	align-items:center;
+}
+
+#steve {
+	width:410px;
+	height:150px;
+
+	background:
+		url("../images/sk8er-2.png")
+	;
+
+	border:3px solid white;
+
+	color:white;
+	font-family:arial black, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:25px;
+	line-height:25px;
+	justify-content:center;
+	align-items:center;
+}
+
+#tommy {
+	height:310px;
+	width:200px;
+
+	position:relative;
+	top:-160px;
+
+	background:
+		url("../images/sk8er-1.png")
+	;
+
+	border:3px solid white;
+
+	color:white;
+	font-family:arial black, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:25px;
+	line-height:25px;
+	justify-content:center;
+	align-items:center;
+}
+
+.arrow {
+	width:150px;
+	height:60px;
+
+	background:#b4292e;
+	position:absolute;
+	top:737px;
+	left:170px;
+
+	color:white;
+	font-family:arial, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	line-height:60px;
+	font-size:15px;
+	padding-left:15px;
+
+	box-shadow:0 3px rgba(175, 175, 175, 0.4);
+}
+
+.skateboarders:after {
+	content:"";
+	display:block;
+
+	width: 0;
+	height: 0;
+
+
+	border-style: solid;
+	border-width: 30px 0 30px 30px;
+	border-color: transparent transparent transparent #b4292e;
+
+	position:absolute;
+	top:737px;
+	left:320px;
+}
+
+
+.arrow:after {
+	content:"";
+	display:block;
+
+	width: 0;
+	height: 0;
+
+
+	border-style: solid;
+	border-width: 30px 0 30px 30px;
+	border-color: transparent transparent transparent #afafaf;
+
+	position:absolute;
+	top:3px;
+	left:150px;
+
+	opacity:.4;
+}
+
+.bottombox{
+	height:250px;
+	width:620px;
+	display:block;
+	background:white;
+	color:black;
+	border:2px solid white;
+	margin:5px;
+	margin-top:25px;
+
+	font-family:arial, sans-serif;
+	box-shadow:0 3px rgba(175, 175, 175, 0.6);
+
+}
+
+#bottomboxright {
+	display:flex;
+	float:right;
+	margin:15px;
+	position:relative;
+	top:-140px;
+}
+
+.bottomboximagelinks a:link{
+	text-decoration:none;
+}
+
+input::-webkit-input-placeholder {
+	text-transform:uppercase;
+	color:#bcbcbc;
+	padding:3px;
+}
+
+textarea::-webkit-input-placeholder {
+	text-transform:uppercase;
+	color:#bcbcbc;
+	padding:3px;
+}
+
+#bottomboxright input{
+	width:275px;
+}
+
+#bottomboxright input[type="text"] {
+	padding:4px;
+	margin-bottom:5px;
+
+	border-style:inset;
+	border-width:3px 2px 2px 3px;
+}
+
+#bottomboxright input[type="email"] {
+	padding:4px;
+	margin:5px 0;
+
+	border-style:inset;
+	border-width:3px 2px 2px 3px;
+}
+
+#bottomboxright textarea {
+	padding:4px;
+	width:275px;
+	height:75px;
+
+	margin-top:5px;
+
+    box-sizing: border-box;
+    border-style:inset;
+    border-width: 3px 2px 2px 3px;
+    resize: none;
+}
+
+#bottomboxright input[type="submit"] {
+	width:140px;
+	height:25px;
+
+	background-color:#c42323;
+	color:white;
+
+	border-style:none;
+	margin-top:10px;
+
+	float:right;
+}
+
+#bottomboxheader {
+	color:#303030;
+	margin:15px;
+
+	letter-spacing:.5px;
+}
+
+#bottomboxcaption {
+	width:300px;
+	text-align:left;
+	color:grey;
+	font-size:11px;
+	margin-left:15px;
+	line-height:15px;
+}
+
+#bottomfacebook, #bottomwifi, #bottomyoutube, #bottomtwitter {
+	margin-top:12px;
+	height:20px;
+	width:20px;
+	display:inline-block;
+}
+
+#bottomfacebook {
+	margin-left:15px;
+	padding:3px;
+
+	background-color:#474747;
+}
+
+#bottomwifi {
+	padding:5px;
+
+	background-color:#a0a0a0;
+}
+
+#bottomtwitter {
+	padding:4px;
+	background-color:#707070;
+}
+
+#bottomyoutube {
+	padding:1px;
+	background-color:#707070;
+}
+
+#skateboard-galery {
+	margin:5px;
+	width:620px;
+	height:210px;
+	background:white;
+	margin:15px;
+	position:relative;
+	top:-10px;
+	right:10px;
+
+	box-shadow:0 3px rgba(175, 175, 175, 0.6);
+}
+
+#skateboards img{
+	margin-top:15px;
+	height:180px;
+	display:inline-flex;
+	margin-right:12px;
+
+}
+
+#board1 {
+	margin-left:21px;
+}
